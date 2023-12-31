@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2022",
+    "outDir": "./dist/src",
+    "baseUrl": "./",
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictBindCallApply": false,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": false,
+    "forceConsistentCasingInFileNames": false,
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
+  }
+}
