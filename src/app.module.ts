@@ -10,7 +10,6 @@ import { CreateTrgmIndexOnPersonSearchField1704031883551 } from "./db/typeorm/mi
     TypeOrmModule.forRoot({
       type: "postgres",
       port: 5432,
-      migrationsRun: true,
       migrations: [
         EnablePgTrgmExtension1704031784077,
         CreateTrgmIndexOnPersonSearchField1704031883551,
@@ -20,8 +19,7 @@ import { CreateTrgmIndexOnPersonSearchField1704031883551 } from "./db/typeorm/mi
       password: process.env.POSTGRES_PASSWORD,
       database: "rinha-backend-nestjs-2023-q3",
       entities: [Person],
-      logging: true,
-      synchronize: true,
+      logging: false,
     }),
     PersonModule,
   ],

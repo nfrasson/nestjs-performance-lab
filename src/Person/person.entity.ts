@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { Entity, Column, PrimaryColumn } from "typeorm";
 
-@Entity()
+@Entity("person")
 export class Person {
   @PrimaryColumn()
   id?: string;
